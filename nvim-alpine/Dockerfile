@@ -57,7 +57,7 @@ RUN npm install -g neovim
 COPY nvim /root/.config/nvim
 COPY dein /root/.config/dein
 
-# RUN nvim +:UpdateRemotePlugins +:qa
+RUN nvim +:UpdateRemotePlugins +:qa
 RUN chmod -R 777 /root
 
 # ENTRYPOINT ["nvim"]
